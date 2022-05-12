@@ -1,26 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="homeBackgroundImage">
+    <div class="wrapper">
+      <Header name="Nicklas Spendler Christensen"/>
+      <h1>Hello World</h1>
+    </div>
+  </div>
+  <div class="wrapper">
+    <CV/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header';
+import CV from './components/CV.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    CV
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body{
+    margin: 0;
+  }
+
+  .wrapper{
+    margin: 0 14%;
+  }
+  li{
+    list-style: none;
+  }
+  .homeBackgroundImage{
+    background-image: url("G:\programering\portfolio\portfolio\src\assets\homeImage.jpg");
+    height: 100vh;
+    background-size: cover;
+    color: white;
+  }
 </style>
