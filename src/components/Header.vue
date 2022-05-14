@@ -1,12 +1,11 @@
 <template>
+
     <header>
-        <h2>{{name}}</h2>
-        <nav>
-            <li>Home</li>
-            <li>CV</li>
-            <li>Projects</li>
-        </nav>
+        <div class="wrapper">
+            <h2>{{name}}</h2>
+        </div>
     </header>
+   
 </template>
 
 <script>
@@ -20,11 +19,14 @@ export default {
 
 <style scoped>
     header {
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    header > .wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
-    header > nav{
+    header > .wrapper > nav{
         display: flex;
         justify-content: space-around;
         align-items: center;

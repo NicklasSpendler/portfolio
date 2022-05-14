@@ -1,6 +1,23 @@
 <template>
-    <section>
+    <section class="CV">
         <h1>Om Mig</h1>
+        <div class="aboutme">
+            <div class="aboutme__text">
+                <p>Jeg er en person som godt kan lide at gå dybt ind i tingende. <br><br>
+                For mig er det ikke nok at overfladisk forstå tingende, jeg elsker at have gode kompetencer!
+                <br><br>
+                jeg er heller ikke bange for at lære nyt, tvertimod så opsøger jeg nye teknologier jeg aldrig har prøvet før. <br><br>
+                Denne side er et bevis for det, dette er mit første fuldendte Vue.js projekt!<br><br>
+                Ud over kodning intersserer jeg mig også for elektronisk musik produktion! Og også her elsker jeg ikke bare at komponere en sang.
+                Men også design lyde fra bunden!<br><br>
+                I min fritid spiller jeg Computer Spil, tilbringer tid med venner og udøver hobbyer.
+                
+                </p>
+            </div>
+            <div class="profilepicture">
+                <img src="../assets/profilpicture2.jpg" alt="">
+            </div>
+        </div>
     </section>
 </template>
 
@@ -11,5 +28,26 @@ export default {
 </script>
 
 <style scoped>
-
+    .CV > h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .aboutme{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .aboutme__text {
+        width: 100%;
+    }
+    .profilepicture {
+        width:  20rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .profilepicture > img {
+        border-radius: 100%;
+        height: 300px;
+        align-self: center;
+    }
 </style>
