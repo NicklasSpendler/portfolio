@@ -6,11 +6,15 @@
 
             
         </section>
-        <div class="kompetenceBoxContainer">
-            <KompetenceBox header="Front End" :kompetencer="['HTML/CSS', 'Javascript', 'Node.JS', 'Vue.JS']"/>
-            <KompetenceBox header="Back End" :kompetencer="['Java (Spring)', 'C# (Asp.net 6 Core)', 'Node.JS (Express)', 'SQL', 'Firebase']"/>
-            <KompetenceBox header="Andet" :kompetencer="['Projekt Dokumentation (FX UML)', 'Arbejdet Agilt', 'Machine Learning (Python)', 'Docker', 'Postman / Insomnia']"/>
+        <div  class="kompetenceBoxContainer">
+            <KompetenceBox v-for="kompetence in kompetencer" :key="kompetence.id" :header="kompetence.name" :kategorid="kompetence.id"/>
         </div>
+
+
+
+        <KompetenceBox header="Front End" :kompetencer="['HTML/CSS', 'Javascript', 'Node.JS', 'Vue.JS']"/>
+        <KompetenceBox header="Back End" :kompetencer="['Java (Spring)', 'C# (Asp.net 6 Core)', 'Node.JS (Express)', 'SQL', 'Firebase']"/>
+        <KompetenceBox header="Andet" :kompetencer="['Projekt Dokumentation (FX UML)', 'Arbejdet Agilt', 'Machine Learning (Python)', 'Docker', 'Postman / Insomnia']"/>
     </section>
 </template>
 
@@ -21,8 +25,20 @@ export default {
     name: "Kompetencer",
     components:{
         KompetenceBox,
+    },
+    data() {
+        return {
+            kompetencer: []
+        }
+    },
+    mounted() {
+        fetch("https://portfolioapinicklas.azurewebsites.net/api/CompetenceCategory")
+        .then(res => res.json())
+        .then(data => this.kompetencer = data)
+        .catch(err => console.log(err.message) );
     }
 }
+
 </script>
 
 <style scoped>

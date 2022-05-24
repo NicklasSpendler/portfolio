@@ -1,8 +1,8 @@
 <template>
-    <div class="KompetenceBox">
+    <div v-if="kompetencer[0]" class="KompetenceBox">
         <h2>{{header}}</h2>
         <ul class="Kompetence">
-            <li v-for="kompetence in kompetencer">{{kompetence}}</li>
+            <li v-for="kompetence in kompetencer">{{kompetence.name}}</li>
         </ul>
     </div>
 </template>
@@ -11,8 +11,19 @@
 export default {
     name:"KompetenceBox",
     props: {
-        kompetencer: Array,
-        header: String
+        header: String,
+        kategorid: Number,
+    },
+    data(){
+        return {
+            kompetencer: []
+        }
+    },
+    mounted() {
+        fetch("https://portfolioapinicklas.azurewebsites.net/api/Competence/byCategoryId/category/" + this.kategorid)
+        .then(res => res.json())
+        .then(data => this.kompetencer = data)
+        .catch(err => console.log(err.message) );
     }
 }
 </script>
