@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'header',
+    name: 'headerComp',
     props: {
         name: String,
     }

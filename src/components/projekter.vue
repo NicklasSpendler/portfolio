@@ -2,7 +2,10 @@
     <h1 class="componentHeader">
         Projekter
     </h1>
-    <projekt />
+    
+    <ul v-for="projekt in projekter">
+        <projekt :header=projekt.name :description="projekt.description" />
+    </ul>
 </template>
 
 <script>
@@ -12,7 +15,18 @@ export default {
     name: 'projekter',
     components: {
         projekt
-    }, 
+    }, data(){
+        return{
+            projekter: []
+        }
+    }, mounted(){
+        fetch("https://portfolioapinicklas.azurewebsites.net/api/Projects")
+        .then(res => res.json())
+        .then(data => this.projekter = data)
+        .catch(err => console.log(err.message) );
+
+
+    }
 }
 </script>
 

@@ -5,9 +5,9 @@
         </div>
         <div class="projekt__desc">
             <div class="projekt__wrapper">
-                <h1 class="desc__header">Portfolio </h1>
+                <h1 class="desc__header">{{header}} </h1>
                 <hr style="margin-top: 0">
-                <p style="white-space: pre-wrap;">{{text}}</p>
+                <p style="white-space: pre-line;">{{description}}</p>
             </div>
         </div>
     </div>
@@ -16,10 +16,17 @@
 <script>
 export default {
     name: 'projekt',
+    props: {
+        header: String,
+        description: String
+    },
     data(){
         return {
-            text: 'Dette projekt omhandler udarbejdelsen af portfolio. \n\n Portfolien er udviklet ved hjælp af Vue.js som frontned. Opbygningen er modulær, så jeg kan tilgå data igennem en API.  \n\n Planen er at lave et CMS system, hvori jeg kan slette, tilføje og redigere i kompetencer, CV og projekter vist på frontend. \n\n For at tilgå API kan man finde den oppe NAV til højre.'
         }
+    }, 
+    mounted() {   
+
+
     }
 }
 </script>

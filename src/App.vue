@@ -1,6 +1,6 @@
 <template>
   <div class="homeBackgroundImage">
-    <Header name="Nicklas Spendler Christensen"/>
+    <HeaderComp name="Nicklas Spendler Christensen"/>
   </div>
   <div class="wrapper">
     <CV/>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Header from './components/Header';
+import HeaderComp from './components/HeaderComp.vue';
 import CV from './components/CV.vue';
 import Kompetencer from './components/Kompetencer.vue';
 import Projekter from './components/projekter.vue';
@@ -23,7 +23,7 @@ import Projekter from './components/projekter.vue';
 export default {
   name: 'App',
   components: {
-    Header,
+    HeaderComp,
     CV,
     Kompetencer,
     Projekter
