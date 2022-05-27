@@ -2,19 +2,20 @@
     <section class="kompetencer">
         <section class="kompetencer__header">
             <h1 class="componentHeader">Kompetencer</h1>
-            <h2>Disse er nogen teknologier jeg har arbejdet med</h2>
+            <h2>Dette er eksempler på teknologier jeg har arbejdet med</h2>
 
             
         </section>
-        <div  class="kompetenceBoxContainer">
+        
+        <div v-if="kompetencer[0]" class="kompetenceBoxContainer">
             <KompetenceBox v-for="kompetence in kompetencer" :key="kompetence.id" :header="kompetence.name" :kategorid="kompetence.id"/>
+        </div>
+        <div v-else>
+            <p style="text-align: center">fetcher data. Vent venligst, det er muligvis nødvendigt at refresh.</p>
         </div>
 
 
 
-        <KompetenceBox header="Front End" :kompetencer="['HTML/CSS', 'Javascript', 'Node.JS', 'Vue.JS']"/>
-        <KompetenceBox header="Back End" :kompetencer="['Java (Spring)', 'C# (Asp.net 6 Core)', 'Node.JS (Express)', 'SQL', 'Firebase']"/>
-        <KompetenceBox header="Andet" :kompetencer="['Projekt Dokumentation (FX UML)', 'Arbejdet Agilt', 'Machine Learning (Python)', 'Docker', 'Postman / Insomnia']"/>
     </section>
 </template>
 

@@ -7,12 +7,7 @@
             <div class="projekt__wrapper">
                 <h1 class="desc__header">Portfolio </h1>
                 <hr style="margin-top: 0">
-                <p>Dette projekt er lavet til brug af portfolio. <br><br>
-                det er udviklet ved hjælp af Vue.js som frontned og tanken er at det er lavet modulært så jeg kan tilgå data igennem en API. <br><br>
-                det er planlagt at jeg ville lave et CMS system hvor i jeg kan slette, tilføje og redigere i kompetencer, CV og projekter vist på frontend.
-                <br><br>
-                For nu er det dog blot et API som man kan se <a href="https://portfolioapinicklas.azurewebsites.net/swagger/index.html">her</a>.
-                </p>
+                <p style="white-space: pre-wrap;">{{text}}</p>
             </div>
         </div>
     </div>
@@ -22,6 +17,9 @@
 export default {
     name: 'projekt',
     data(){
+        return {
+            text: 'Dette projekt omhandler udarbejdelsen af portfolio. \n\n Portfolien er udviklet ved hjælp af Vue.js som frontned. Opbygningen er modulær, så jeg kan tilgå data igennem en API.  \n\n Planen er at lave et CMS system, hvori jeg kan slette, tilføje og redigere i kompetencer, CV og projekter vist på frontend. \n\n For at tilgå API kan man finde den oppe NAV til højre.'
+        }
     }
 }
 </script>
@@ -33,6 +31,7 @@ export default {
 }
 .projekt__box{
     display: flex;
+    border: solid white 1px;
 }
 .projekt__image{
     width: 50%;
@@ -40,6 +39,8 @@ export default {
 
 .projekt__image > img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .projekt__desc{
     width: 100%;

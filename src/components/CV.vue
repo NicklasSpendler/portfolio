@@ -3,15 +3,14 @@
         <h1 class="componentHeader">Om Mig</h1>
         <div class="aboutme">
             <div class="aboutme__text">
-                <p>Jeg er en person som godt kan lide at gå dybt ind i tingende. <br><br>
-                For mig er det ikke nok at overfladisk forstå tingende, jeg elsker at have gode kompetencer!
+                <p>Som person kan jeg godt lide at sætte mig godt ind i emner og opgaver. <br><br>
+                For mig er det ikke nok at have en overfladisk forståelse , jeg elsker at gå dybt i emnet og tilegne mig solide kompetencer.
                 <br><br>
-                jeg er heller ikke bange for at lære nyt, tvertimod så opsøger jeg nye teknologier jeg aldrig har prøvet før. <br><br>
-                Denne side er et bevis for det, dette er mit første fuldendte Vue.js projekt!<br><br>
+                jeg er heller ikke bange for at lære nyt, tværtimod så opsøger jeg nye teknologier jeg aldrig har prøvet før. <br><br>
+                Denne side er et bevis for dette, den er mit første fuldendte Vue.js projekt!<br><br>
                 Ud over kodning intersserer jeg mig også for elektronisk musik produktion! Og også her elsker jeg ikke bare at komponere en sang.
                 Men også design lyde fra bunden!<br><br>
-                I min fritid spiller jeg Computer Spil, tilbringer tid med venner og udøver hobbyer.
-                
+                I min fritid spiller jeg Computer Spil, tilbringer tid med venner og hobbyer f.eks. fitness træning og musik produktion.
                 </p>
             </div>
             <div class="profilepicture">

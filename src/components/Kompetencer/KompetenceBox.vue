@@ -1,9 +1,12 @@
 <template>
-    <div v-if="kompetencer[0]" class="KompetenceBox">
+    <div class="KompetenceBox">
         <h2>{{header}}</h2>
-        <ul class="Kompetence">
+        <ul v-if="kompetencer[0]" class="Kompetence">
             <li v-for="kompetence in kompetencer">{{kompetence.name}}</li>
         </ul>
+        <p v-else>
+            fetcher data
+        </p>
     </div>
 </template>
 

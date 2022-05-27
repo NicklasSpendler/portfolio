@@ -47,6 +47,7 @@ export default {
     letter-spacing: 2px;
     color: white;
   }
+
   ul{
     padding: 0;
   }
