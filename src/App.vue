@@ -9,7 +9,8 @@
     <br>
     <br>
     <Kompetencer/>
-
+    <br>
+    <Projekter/>
   </div>
 </template>
 
@@ -17,13 +18,15 @@
 import Header from './components/Header';
 import CV from './components/CV.vue';
 import Kompetencer from './components/Kompetencer.vue';
+import Projekter from './components/projekter.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
     CV,
-    Kompetencer
+    Kompetencer,
+    Projekter
   }
 }
 </script>
@@ -60,5 +63,9 @@ export default {
     height: 100vh;
     background-size: cover;
     color: white;
+  }
+  .componentHeader{
+      text-align: center;
+      font-size: 3rem;
   }
 </style>

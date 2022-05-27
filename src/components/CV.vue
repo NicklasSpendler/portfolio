@@ -1,6 +1,6 @@
 <template>
     <section class="CV">
-        <h1>Om Mig</h1>
+        <h1 class="componentHeader">Om Mig</h1>
         <div class="aboutme">
             <div class="aboutme__text">
                 <p>Jeg er en person som godt kan lide at gå dybt ind i tingende. <br><br>
@@ -28,10 +28,6 @@ export default {
 </script>
 
 <style scoped>
-    .CV > h1{
-        text-align: center;
-        font-size: 3rem;
-    }
     .aboutme{
         display: flex;
         justify-content: space-evenly;

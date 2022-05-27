@@ -1,7 +1,7 @@
 <template>
     <section class="kompetencer">
         <section class="kompetencer__header">
-            <h1>Kompetencer</h1>
+            <h1 class="componentHeader">Kompetencer</h1>
             <h2>Disse er nogen teknologier jeg har arbejdet med</h2>
 
             
@@ -42,10 +42,6 @@ export default {
 </script>
 
 <style scoped>
-    h1{
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
     .kompetencer__header{
         text-align: center;
     }
