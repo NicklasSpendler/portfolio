@@ -34,14 +34,13 @@ export default {
 <style scoped>
     .KompetenceBox{
         display: flex;
-        border: 1px solid black;
         padding: 1rem;
         border-radius: 5%;
         flex-direction: column;
         min-width: 13rem;
-        box-shadow: 1px 1px 28px 6px rgba(0,0,0,0.66);
-        -webkit-box-shadow: 1px 1px 28px 6px rgba(0,0,0,0.66);
-        -moz-box-shadow: 1px 1px 28px 6px rgba(0,0,0,0.66);
+        -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.37);
+        -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.37);
+        box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.37);
     }
     li{
         margin-bottom: .5rem;
@@ -51,5 +50,10 @@ export default {
     h2{
         border-bottom: 1px solid;
         text-align: center;
-    }    
+    }
+    @media screen and (max-width: 1130px) {
+        .KompetenceBox{
+            margin-bottom: 3rem;
+    }
+}
 </style>

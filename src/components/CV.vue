@@ -41,8 +41,15 @@ export default {
         justify-content: center;
     }
     .profilepicture > img {
+        
         border-radius: 100%;
         height: 300px;
         align-self: center;
     }
+
+@media screen and (max-width: 1130px) {
+    .aboutme{
+        flex-direction: column-reverse;
+    }
+}
 </style>

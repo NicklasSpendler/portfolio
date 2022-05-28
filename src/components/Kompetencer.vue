@@ -43,6 +43,9 @@ export default {
 </script>
 
 <style scoped>
+    h2{
+        margin-bottom: 2rem;
+    }
     .kompetencer__header{
         text-align: center;
     }
@@ -50,4 +53,12 @@ export default {
         display: flex;
         justify-content: space-around;
     }
+
+@media screen and (max-width: 1130px) {
+        .kompetenceBoxContainer{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
 </style>

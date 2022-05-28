@@ -3,9 +3,12 @@
         Projekter
     </h1>
     
-    <ul v-for="projekt in projekter">
-        <projekt :header=projekt.name :description="projekt.description" />
+    <ul v-if="projekter[0]" v-for="projekt in projekter">
+        <projekt :header=projekt.name :description="projekt.description" :imagePath="projekt.imagePath" />
     </ul>
+    <div v-else>
+        <p style="text-align: center;">fetcher data. Vent venligst, det er muligvis nødvendigt at refresh.</p>
+    </div>
 </template>
 
 <script>
@@ -31,5 +34,12 @@ export default {
 </script>
 
 <style scoped>
+
+
+@media screen and (max-width: 1130px) {
+    .componentHeader{
+        margin: 0 0 1rem 0;
+    }
+}
 
 </style>

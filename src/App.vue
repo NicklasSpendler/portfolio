@@ -4,12 +4,8 @@
   </div>
   <div class="wrapper">
     <CV/>
-    <br>
-    <br>
-    <br>
-    <br>
+
     <Kompetencer/>
-    <br>
     <Projekter/>
   </div>
 </template>
