@@ -75,4 +75,17 @@ export default {
     justify-self: flex-end;
 }
 
+@media screen and (max-width: 1130px) {
+    .desc__header{
+        font-size: 1.5rem;
+    }
+    .projekt__desc{
+        font-size: 1rem;
+        width: 80%;
+    }
+    .projekt__image{
+        width: 20%;
+    }
+}
+
 </style>
