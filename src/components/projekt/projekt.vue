@@ -1,7 +1,7 @@
 <template>
     <div class="projekt__box">
         <div class="projekt__image">
-            <img src="/img/portfolio__projekt.jpg" alt="">
+            <img :src=imagePath alt="">
         </div>
         <div class="projekt__desc">
             <div class="projekt__wrapper">
