@@ -65,4 +65,10 @@ export default {
       text-align: center;
       font-size: 3rem;
   }
+
+  @media screen and (max-width: 1130px) {
+    .wrapper{
+      margin: 0 5%;
+    }
+}
 </style>
