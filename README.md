@@ -1,19 +1,9 @@
 # portfolio
 
-## Project setup
-```
-npm install
-```
+Et Vue.JS projekt lavet til brug som portfolio.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Data er fetched fra backend, så det kan praktisk talt bruges som et skabalon for andres portfolioer.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Backend
+Link til backend kan findes her - https://github.com/NicklasSpendler/PortFolioBackend
+Og der findes en nem gennemgang af APIet her - https://portfolioapinicklas.azurewebsites.net/swagger/index.html
