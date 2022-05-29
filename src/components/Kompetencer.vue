@@ -8,10 +8,10 @@
         </section>
         
         <div v-if="kompetencer[0]" class="kompetenceBoxContainer">
-            <KompetenceBox v-for="kompetence in kompetencer" :key="kompetence.id" :header="kompetence.name" :kategorid="kompetence.id"/>
+            <KompetenceBox v-for="kompetence in kompetencer" :key="kompetence.id" :header="kompetence.name" :kategorid="kompetence.id" :githubLink="kompetence.githubLink"/>
         </div>
         <div v-else>
-            <p style="text-align: center">fetcher data. Vent venligst, det er muligvis nødvendigt at refresh.</p>
+            <p style="text-align: center">fetcher data. Vent venligst</p>
         </div>
 
 

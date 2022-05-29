@@ -4,10 +4,10 @@
     </h1>
     
     <ul v-if="projekter[0]" v-for="projekt in projekter">
-        <projekt :header=projekt.name :description="projekt.description" :imagePath="projekt.imagePath" />
+        <projekt :header=projekt.name :description="projekt.description" :imagePath="projekt.imagePath" :githubLink="projekt.githubLink"/>
     </ul>
     <div v-else>
-        <p style="text-align: center;">fetcher data. Vent venligst, det er muligvis nødvendigt at refresh.</p>
+        <p style="text-align: center;">fetcher data. Vent venligst</p>
     </div>
 </template>
 

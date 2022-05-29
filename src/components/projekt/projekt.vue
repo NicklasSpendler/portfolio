@@ -4,6 +4,11 @@
             <img :src=imagePath alt="">
         </div>
         <div class="projekt__desc">
+            <div class="github__container">
+                <a :href=githubLink>
+                    <img src="../../assets/githubLogo.png" alt="">
+                </a>
+            </div>
             <div class="projekt__wrapper">
                 <h1 class="desc__header">{{header}} </h1>
                 <hr style="margin-top: 0">
@@ -19,7 +24,8 @@ export default {
     props: {
         header: String,
         description: String,
-        imagePath: String
+        imagePath: String,
+        githubLink: String
     },
     data(){
         return {
@@ -48,6 +54,7 @@ export default {
     -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.37);
     -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.37);
     box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.37);
+    position: relative;
 }
 .projekt__image{
     width: 40%;
@@ -71,8 +78,14 @@ export default {
     justify-content: center;
     align-items: center;
 }
-.desc__header > .github_icon{
-    justify-self: flex-end;
+.github__container{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.github__container > a > img{
+    height: 50px;
 }
 
 @media screen and (max-width: 1130px) {
@@ -85,6 +98,16 @@ export default {
     }
     .projekt__image{
         width: 20%;
+    }
+
+    .github__container{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .github__container > a > img{
+        height: 30px;
     }
 }
 
